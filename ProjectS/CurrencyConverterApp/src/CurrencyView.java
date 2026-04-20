@@ -44,9 +44,16 @@ public class CurrencyView {
 
         // TITLE
         JLabel title = new JLabel("Currency Converter", SwingConstants.CENTER);
-        title.setBounds(0, 20, 350, 30);
+        title.setBounds(20, 20, 350, 30);
         title.setFont(new Font("Segoe UI", Font.BOLD, 18));
         panel.add(title);
+
+        // ICON
+        ImageIcon icon = new ImageIcon("icon.png");
+        Image img = icon.getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH);
+        JLabel iconLabel = new JLabel(new ImageIcon(img));
+        iconLabel.setBounds(50, 10, 60, 60);
+        panel.add(iconLabel);
 
         Font font = new Font("Segoe UI", Font.PLAIN, 14);
 
