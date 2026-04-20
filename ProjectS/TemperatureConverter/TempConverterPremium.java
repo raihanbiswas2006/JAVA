@@ -1,4 +1,7 @@
 import javax.swing.*;
+
+import org.w3c.dom.events.MouseEvent;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -10,6 +13,7 @@ public class TempConverterPremium {
         frame.setSize(500, 450);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setTitle("Temperature Converter Premium");
 
         // GRADIENT BACKGROUND (smoother dark blend)
         JPanel bg = new JPanel() {
@@ -102,6 +106,7 @@ public class TempConverterPremium {
         btn.setContentAreaFilled(false);
         btn.setBorderPainted(false);
         btn.setFocusPainted(false);
+        btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         // HOVER + CLICK ANIMATION
         btn.addMouseListener(new MouseAdapter() {
@@ -123,8 +128,8 @@ public class TempConverterPremium {
         // RESULT
         JLabel result = new JLabel("Result", SwingConstants.CENTER);
         result.setBounds(50, 250, 250, 30);
-        result.setFont(new Font("Segoe UI", Font.BOLD, 15));
-        result.setForeground(new Color(230, 230, 255));
+        result.setFont(new Font("Segoe UI", Font.BOLD, 18));
+        result.setForeground(new Color(255, 255, 255));
         panel.add(result);
 
         // LOGIC
