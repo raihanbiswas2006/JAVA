@@ -2,7 +2,7 @@ import java.util.*;
 public class maxmin{
 public static void main(String[] args){
      
-    System.out.println("enter array size : ");
+    System.out.println("Give array size : ");
     Scanner sc= new Scanner(System.in);
     int n = sc.nextInt();
     System.out.println("Give array numbers : ");
